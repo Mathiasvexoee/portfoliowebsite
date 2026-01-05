@@ -17,6 +17,10 @@ img {
   border-radius: var(--border-radius-desktop-img);
 }
 
+.highlight {
+  color: var(--color-text-highlighted);
+}
+
 /* CARDS */
 main {
   display: flex;
