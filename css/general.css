@@ -12,6 +12,14 @@ html {
   scroll-behavior: smooth;
 }
 
+#Tema2,
+#Tema3,
+#Tema4,
+#Tema5-1,
+#Tema5-2 {
+  scroll-margin-top: 260px;
+}
+
 img {
   max-width: 100%;
   border-radius: var(--border-radius-desktop-img);
@@ -38,7 +46,7 @@ main section:nth-child(odd) {
   color: var(--color-text);
   box-shadow: var(--drop-shadow-desktop);
   clip-path: inset(0 0 -100px 0);
-  z-index: 2;
+  z-index: 10;
 }
 
 main section:nth-child(even) {
@@ -46,7 +54,7 @@ main section:nth-child(even) {
   color: var(--color-inverted);
   box-shadow: var(--drop-shadow-desktop);
   clip-path: inset(0 0 -100px 0);
-  z-index: 1;
+  z-index: 9;
 }
 
 main section:first-child {
@@ -70,6 +78,14 @@ main section:not(:first-child):not(:last-child) {
 @media (width < 800px) {
   main section {
     padding: 0 1em 2em 1em;
+  }
+
+  #Tema2,
+  #Tema3,
+  #Tema4,
+  #Tema5-1,
+  #Tema5-2 {
+    scroll-margin-top: 600px;
   }
 
   main section:nth-child(odd) {

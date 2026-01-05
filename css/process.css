@@ -1,0 +1,177 @@
+main section:nth-of-type(1) {
+  padding: 1em 4em 2em 4em;
+}
+main section:nth-of-type(1) h3 {
+  padding-bottom: 1em;
+}
+main section:nth-of-type(1) img {
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  object-position: top;
+}
+
+main section:nth-of-type(2) {
+  position: relative;
+  z-index: 9;
+  border-radius: 0 0 40px 40px;
+}
+
+main section:nth-of-type(3) {
+  position: relative;
+  z-index: 8;
+  border-radius: 0;
+}
+
+main section:nth-of-type(4) {
+  border-radius: 40px 40px 40px 40px;
+  z-index: 7;
+}
+main section:nth-of-type(5) {
+  z-index: 6;
+}
+main section:nth-of-type(6) {
+  z-index: 5;
+}
+
+main section:nth-last-of-type(2) {
+  z-index: 7;
+}
+main section:nth-last-of-type(3) {
+  z-index: 8;
+}
+
+.section.normal {
+  padding: 2em;
+}
+.section.normal:not(:first-of-type) h3 {
+  margin: 3em 0 2em 0;
+}
+.section.normal h4 {
+  margin-bottom: 1em;
+}
+
+/* ANDEN SEKTION */
+.research {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-bottom: 3em;
+}
+
+.research img {
+  max-width: 45%;
+  justify-self: center;
+  align-self: start;
+  margin-bottom: -20vw;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.user img {
+  max-width: 50%;
+  order: 1;
+  align-self: end;
+  margin-top: -20vw;
+}
+.user div {
+  order: 2;
+}
+
+/* TREDJE SEKTION */
+.idé p {
+  margin-top: 1em;
+}
+
+.idé {
+  margin: 0 1em;
+}
+
+.idé-billeder {
+  display: flex;
+  gap: 1em;
+}
+
+.idé img {
+  max-width: 35%;
+  margin-top: 1em;
+  margin-bottom: 10em;
+}
+
+/* Desktop layout */
+@media (width > 800px) {
+  .research,
+  .user {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+    align-items: center;
+  }
+
+  /* Moodboards i grid */
+  .idé > div:last-child {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+  }
+}
+
+@media (width > 800px) {
+  /* ANDEN SEKTION */
+  .research img {
+    max-width: 50%;
+    margin-bottom: 0;
+  }
+  .user img {
+    order: 2;
+    align-self: center;
+    justify-self: center;
+    margin-top: 0;
+  }
+  .user div {
+    order: 1;
+  }
+  /* TREDJE SEKTION */
+
+  main section:nth-of-type(1) {
+    padding: 1em 8em 2em 8em;
+  }
+  main section:nth-of-type(1) img {
+    aspect-ratio: 3.5 / 1;
+  }
+
+  /* Wrapper bestemmer hvor lang scrollen er */
+  .horizontal-wrapper {
+    height: 400vh; /* 4 panels = 400vh */
+    position: relative;
+  }
+
+  /* Sticky container */
+  .horizontal-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    z-index: 5;
+  }
+
+  /* Den horisontale række */
+  .horizontal-track {
+    display: flex;
+    height: 100%;
+    width: 400vw; /* 4 panels */
+    will-change: transform;
+    transition: transform 0.05s ease-out; /* Gør animationen lidt blødere */
+  }
+
+  .panel {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-card-bg);
+  }
+}
