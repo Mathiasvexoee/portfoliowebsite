@@ -1,0 +1,71 @@
+:root {
+  --radius: 25px;
+  --thin: 1px;
+  --thick: 7px;
+  --corner-size: 40px;
+  --offset: calc((var(--thick) - var(--thin)) / 2);
+
+  /* Farver */
+  --color-h1: #232527;
+  --color-h2-primary: #6e0209;
+  --color-h2-primary-light: #034e93;
+  --color-h2-secondary: #3b6f77;
+  --color-h2-secondary-light: #6993ab;
+  --color-h3-primary: #d9d7d3;
+  --color-h3-secondary: #f9f8f7;
+
+  --color-text: #232527;
+  --color-inverted: #f9f8f7;
+  --color-text-highlighted: #6993ab;
+
+  /* Header */
+  --color-header-bg: #d9d7d3;
+  --color-header-outline: #6e0209;
+  --color-header-hover: #6e0209;
+
+  /* Footer */
+  --color-footer-bg: #d9d7d3;
+  --color-footer-outline: #6e0209;
+  --color-footer-hover: #6e0209;
+
+  /* Borders */
+  --border-radius-desktop-card: 150px;
+  --border-radius-mobile-card: 50px;
+
+  --border-radius-desktop-img: 25px;
+  --border-radius-mobile-img: 10px;
+
+  --border-radius-cta: 15px;
+
+  /* Drop shadow */
+  --drop-shadow-desktop: 0px 10px 8px 8px rgba(0, 0, 0, 0.15);
+  --drop-shadow-mobile: 0px 4px 3px 3px rgba(0, 0, 0, 0.15);
+
+  /* CTA */
+  --color-cta1-bg: #6e0209;
+  --color-cta2-bg: #034e93;
+  --color-cta3-bg: #3b6f77;
+  --color-cta-text: #f9f8f7;
+
+  --color-cta-outline: #d9d7d3;
+  --color-cta-outline-inverted: #f9f8f7;
+
+  /* Cards */
+  --color-card-bg: #f9f8f7;
+  --color-card-bg-inverted: #3b6f77;
+
+  /* Fonts */
+  --font-family-h1-h2: "amandine", sans-serif;
+  --font-family-h3-h4: "raleway", sans-serif;
+  --font-family-text: "raleway", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-style-regular: normal;
+
+  /* Skriftstørrelse */
+  --size-h1: clamp(3rem, 9vw, 10rem);
+  --size-h2: clamp(2.25rem, 4vw, 4rem);
+  --size-h3: clamp(1.2rem, 3vw, 3.5rem);
+  --size-h4: clamp(1rem, 1.5vw, 3rem);
+  --size-p: clamp(0.75rem, 1.1vw, 2rem);
+}
