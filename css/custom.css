@@ -5,15 +5,7 @@
   --corner-size: 40px;
   --offset: calc((var(--thick) - var(--thin)) / 2);
 
-  /* Farver */
-  --color-h1: #232527;
-  --color-h2-primary: #6e0209;
-  --color-h2-primary-light: #034e93;
-  --color-h2-secondary: #3b6f77;
-  --color-h2-secondary-light: #6993ab;
-  --color-h3-primary: #d9d7d3;
-  --color-h3-secondary: #f9f8f7;
-
+  /* Text */
   --color-text: #232527;
   --color-inverted: #f9f8f7;
   --color-text-highlighted: #6993ab;
