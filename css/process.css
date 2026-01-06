@@ -24,7 +24,7 @@ main section:nth-of-type(3) {
 
 main section:nth-of-type(4) {
   border-radius: 40px 40px 40px 40px;
-  z-index: 7;
+  z-index: 9;
 }
 main section:nth-of-type(5) {
   z-index: 6;
@@ -48,6 +48,9 @@ main section:nth-last-of-type(3) {
 }
 .section.normal h4 {
   margin-bottom: 1em;
+}
+p {
+  line-height: 1.25;
 }
 
 /* ANDEN SEKTION */
@@ -84,6 +87,7 @@ main section:nth-last-of-type(3) {
 /* TREDJE SEKTION */
 .idé p {
   margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .idé {
@@ -91,36 +95,153 @@ main section:nth-last-of-type(3) {
 }
 
 .idé-billeder {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1em;
 }
 
-.idé img {
-  max-width: 35%;
-  margin-top: 1em;
-  margin-bottom: 10em;
+.idé-billeder img {
+  max-width: 100%;
+  margin-top: 3em;
 }
 
-/* Desktop layout */
-@media (width > 800px) {
-  .research,
-  .user {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3em;
-    align-items: center;
-  }
+/* FJERDE SEKTION */
+.solution-sketch {
+  margin: 5em 1em;
+  display: grid;
+}
 
-  /* Moodboards i grid */
-  .idé > div:last-child {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2em;
-  }
+.solution-sketch p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.solution-sketch img {
+  justify-self: center;
+  max-width: 75%;
+  margin-top: 3em;
+}
+
+/* FEMTE SEKTION */
+.lo-fi {
+  margin: 5em 1em;
+  display: grid;
+}
+
+.lo-fi p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.lo-fi img {
+  grid-row: 2 / 3;
+  justify-self: center;
+  max-width: 100%;
+  margin: 1em 0;
+}
+
+/* SJETTE SEKTION */
+.styletile {
+  margin: 5em 1em;
+  display: grid;
+}
+
+.styletile p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.styletile img {
+  justify-self: center;
+  max-width: 75%;
+  margin: 1em 0;
+}
+
+/* SYVENDE SEKTION */
+.hi-fi {
+  margin-top: 5em;
+  display: grid;
+}
+.hi-fi p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.hi-fi div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: fit-content;
+  align-items: center;
+}
+.hi-fi div:last-child img {
+  max-width: 75%;
+  margin: 1em 0;
+}
+.hi-fi div:last-child a {
+  margin: 1em 0 -3em 0;
+}
+.tænk {
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.tænk p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.tænk img {
+  justify-self: center;
+  max-width: 75%;
+  margin: 1em 0;
+}
+
+/* OTTENDE SEKTION */
+.kode {
+  margin: 2em 0;
+  display: grid;
+}
+.kode p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.kode > img {
+  justify-self: start;
+  max-width: 75%;
+  margin: 1em 0;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex img {
+  max-width: 55%;
+}
+.flex a {
+  margin-left: 0.5em;
+}
+
+/* NIENDE SEKTION */
+.lighthouse {
+  margin: 5em 0;
+  display: grid;
+}
+.lighthouse p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.lighthouse img {
+  justify-self: center;
+  max-width: 75%;
+  margin-top: 1em;
+  margin-bottom: -10vw;
 }
 
 @media (width > 800px) {
   /* ANDEN SEKTION */
+  .research,
+  .user {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   .research img {
     max-width: 50%;
     margin-bottom: 0;
@@ -135,6 +256,131 @@ main section:nth-last-of-type(3) {
     order: 1;
   }
   /* TREDJE SEKTION */
+  .idé p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    max-width: 40vw;
+  }
+
+  .idé {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .idé-billeder {
+    grid-template-columns: 1fr 1fr;
+  }
+  .idé-billeder img {
+    max-width: 90%;
+  }
+
+  /* FJERDE SEKTION */
+  .solution-sketch {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .solution-sketch p {
+    max-width: 40vw;
+  }
+
+  /* FEMTE SEKTION */
+  .lo-fi {
+    display: grid;
+  }
+
+  .lo-fi p {
+    max-width: 40vw;
+  }
+  .lo-fi div:nth-of-type(1) {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    align-self: flex-start;
+  }
+
+  .lo-fi div:nth-of-type(2) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    margin-top: -10em;
+  }
+
+  .lo-fi img {
+    grid-row: 1 / 2;
+    max-width: 75%;
+  }
+
+  /* SJETTE SEKTION */
+  .styletile {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .styletile div {
+    max-width: 40vw;
+  }
+  .styletile :nth-child(3) {
+    align-self: start;
+  }
+
+  /* SYVENDE SEKTION */
+  .hi-fi {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hifi-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .hi-fi div:last-child img {
+    max-width: 100%;
+  }
+  .tænk {
+    grid-template-columns: 1fr 2fr;
+  }
+  .tænk img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    max-width: 100%;
+  }
+  .tænk div {
+    grid-column: 2 / -1;
+    align-self: center;
+    margin-left: 1em;
+  }
+
+  /* OTTENDE SEKTION */
+  .kode {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .kode p {
+    max-width: 40vw;
+    margin-right: 2em;
+  }
+  .kode > img {
+    max-width: 75%;
+    margin-top: 5em;
+  }
+  .flex {
+    margin-top: 3em;
+    grid-column: 1 / -1;
+    justify-content: space-evenly;
+  }
+  .flex img {
+    max-width: 70%;
+  }
+
+  /* NIENDE SEKTION */
+  .lighthouse {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .lighthouse p {
+    max-width: 40vw;
+  }
+  .lighthouse img {
+    margin-top: 3em;
+    margin-bottom: 0;
+  }
 
   main section:nth-of-type(1) {
     padding: 1em 8em 2em 8em;
@@ -168,7 +414,7 @@ main section:nth-last-of-type(3) {
 
   .panel {
     width: 100vw;
-    height: 80vh;
+    /* height: 80vh; */
     display: flex;
     justify-content: center;
     align-items: center;

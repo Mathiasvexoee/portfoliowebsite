@@ -82,7 +82,7 @@
     top: 8.5rem;
     right: 0em;
     width: 150px;
-    z-index: 3;
+    z-index: 100;
   }
   nav.active .nav-links li {
     margin: 40px 20px;
