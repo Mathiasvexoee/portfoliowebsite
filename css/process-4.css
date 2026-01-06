@@ -1,0 +1,377 @@
+main section:nth-of-type(1) {
+  padding: 1em 4em 2em 4em;
+}
+main section:nth-of-type(1) h3 {
+  padding-bottom: 1em;
+}
+main section:nth-of-type(1) img {
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  object-position: top;
+}
+
+main section:nth-of-type(2) {
+  position: relative;
+  z-index: 9;
+  border-radius: 0 0 40px 40px;
+}
+
+main section:nth-of-type(3) {
+  position: relative;
+  z-index: 8;
+  border-radius: 0;
+}
+
+main section:nth-of-type(4) {
+  border-radius: 40px 40px 40px 40px;
+  z-index: 9;
+}
+main section:nth-of-type(5) {
+  z-index: 6;
+}
+main section:nth-of-type(6) {
+  z-index: 5;
+}
+
+main section:nth-last-of-type(2) {
+  z-index: 7;
+}
+main section:nth-last-of-type(3) {
+  z-index: 8;
+}
+
+.section.normal {
+  padding: 2em;
+}
+.section.normal:not(:first-of-type) h3 {
+  margin: 3em 0 2em 0;
+}
+.section.normal h4 {
+  margin-bottom: 1em;
+}
+p {
+  line-height: 1.25;
+}
+
+/* ANDEN SEKTION */
+.research {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-bottom: 3em;
+}
+
+.research img {
+  max-width: 45%;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: -5vw;
+}
+
+/* TREDJE SEKTION */
+.idé p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.idé {
+  margin: 0 1em;
+}
+
+.idé img {
+  max-width: 100%;
+  margin-top: 3em;
+}
+
+/* FJERDE SEKTION */
+.solution-sketch {
+  margin: 5em 1em;
+  display: grid;
+}
+
+.solution-sketch p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.solution-sketch img {
+  justify-self: center;
+  max-width: 90%;
+  margin-top: 3em;
+}
+.svg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* FEMTE SEKTION */
+.lo-fi {
+  margin: 5em 1em;
+  display: grid;
+}
+
+.lo-fi p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.lo-fi img {
+  justify-self: center;
+  max-width: 75%;
+  margin: 1em 0;
+}
+
+/* SJETTE SEKTION */
+.styletile {
+  margin: 5em 1em;
+  display: grid;
+}
+
+.styletile p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.styletile img {
+  justify-self: center;
+  max-width: 75%;
+  margin: 1em 0;
+}
+
+/* SYVENDE SEKTION */
+.hi-fi,
+.kode {
+  margin-top: 5em;
+  display: grid;
+}
+.hi-fi p,
+.kode p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.hi-fi > div:first-child,
+.kode > div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+.hi-fi > div:first-child a,
+.kode > div:first-child a {
+  margin-top: 1em;
+  width: fit-content;
+  align-self: center;
+}
+.hi-fi img,
+.kode img {
+  max-width: 75%;
+  justify-self: center;
+  margin: 2em 0;
+}
+
+/* OTTENDE SEKTION */
+
+.form {
+  margin: 5em 1em;
+  display: grid;
+}
+
+.form {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.form img {
+  grid-row: 2 / 3;
+  justify-self: center;
+  max-width: 80%;
+  margin: 1em 0;
+}
+
+@media (width > 800px) {
+  /* ANDEN SEKTION */
+  .research {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .research img {
+    max-width: 50%;
+    margin-bottom: 0;
+  }
+  .research div {
+    align-self: center;
+  }
+  /* TREDJE SEKTION */
+  .idé p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    max-width: 40vw;
+  }
+
+  .idé {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .idé img {
+    max-width: 75%;
+  }
+
+  /* FJERDE SEKTION */
+  .solution-sketch {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .solution-sketch p {
+    max-width: 40vw;
+  }
+  .solution-sketch img {
+    max-width: 40%;
+    margin-left: -20vw;
+  }
+  .svg {
+    grid-template-columns: 1fr;
+  }
+
+  /* FEMTE SEKTION */
+  .lo-fi {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .lo-fi div {
+    max-width: 40vw;
+  }
+  .lo-fi :nth-child(3) {
+    align-self: start;
+  }
+
+  .form {
+    display: grid;
+  }
+
+  .form p {
+    max-width: 40vw;
+  }
+  .form div:nth-of-type(1) {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    align-self: flex-start;
+    margin-top: 8vw;
+  }
+
+  .form div:nth-of-type(2) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    margin-top: -18vw;
+  }
+
+  .form img {
+    grid-row: 1 / 2;
+    max-width: 75%;
+  }
+
+  /* SJETTE SEKTION */
+  .styletile {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .styletile div {
+    max-width: 40vw;
+  }
+  .styletile :nth-child(3) {
+    align-self: start;
+  }
+
+  /* SYVENDE SEKTION */
+  .hi-fi {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hifi-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .hi-fi div:last-child img {
+    max-width: 100%;
+  }
+  .tænk {
+    grid-template-columns: 1fr 2fr;
+  }
+  .tænk img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    max-width: 100%;
+  }
+  .tænk div {
+    grid-column: 2 / -1;
+    align-self: center;
+    margin-left: 1em;
+  }
+
+  /* OTTENDE SEKTION */
+  .kode {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .kode p {
+    max-width: 40vw;
+    margin-right: 2em;
+  }
+  .kode > img {
+    max-width: 75%;
+    margin-top: 5em;
+  }
+  .flex {
+    margin-top: 3em;
+    grid-column: 1 / -1;
+    justify-content: space-evenly;
+  }
+  .flex img {
+    max-width: 70%;
+  }
+
+  /* NIENDE SEKTION */
+  .lighthouse {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .lighthouse p {
+    max-width: 40vw;
+  }
+  .lighthouse img {
+    margin-top: 3em;
+    margin-bottom: 0;
+  }
+
+  main section:nth-of-type(1) {
+    padding: 1em 8em 2em 8em;
+  }
+  main section:nth-of-type(1) img {
+    aspect-ratio: 3.5 / 1;
+  }
+
+  /* Wrapper bestemmer hvor lang scrollen er */
+  .horizontal-wrapper {
+    height: 400vh; /* 4 panels = 400vh */
+    position: relative;
+  }
+
+  /* Sticky container */
+  .horizontal-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+
+  /* Den horisontale række */
+  .horizontal-track {
+    display: flex;
+    height: 100%;
+    width: 400vw; /* 4 panels */
+    will-change: transform;
+    transition: transform 0.05s ease-out;
+  }
+
+  .panel {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-card-bg);
+  }
+}

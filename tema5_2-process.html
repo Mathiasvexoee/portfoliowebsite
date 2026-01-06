@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/process.css" />
+    <link rel="stylesheet" href="css/process-5-2.css" />
     <title>Tema 5.2 - designproces</title>
   </head>
   <body>
@@ -33,7 +33,16 @@
           </a>
         </div>
         <ul class="nav-links">
-          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li class="portfolio-dropdown">
+            <a href="portfolio.html">PORTFOLIO</a>
+            <div class="dropdown-menu">
+              <a href="portfolio.html#Tema2">TEMA 2</a>
+              <a href="portfolio.html#Tema3">TEMA 3</a>
+              <a href="portfolio.html#Tema4">TEMA 4</a>
+              <a href="portfolio.html#Tema5-1">TEMA 5.1</a>
+              <a href="portfolio.html#Tema5-2">TEMA 5.2</a>
+            </div>
+          </li>
           <li><a href="om_mig.html">OM MIG</a></li>
         </ul>
         <button class="burger">
@@ -45,30 +54,23 @@
     </header>
     <main>
       <section class="section normal">
-        <h3><span class="highlight">Tema 3</span> - Grundlæggende UX / UI</h3>
-        <img src="img/tema-ss/Tema3.webp" alt="Teaser billede tema 3" />
+        <h3><span class="highlight">Tema 5.2</span> - Grundlæggende Indhold</h3>
+        <img src="img/tema-ss/Tema5.2.webp" alt="Teaser billede tema 5.2" />
       </section>
       <section class="section normal">
         <h3>Designprocessen</h3>
         <div class="research">
           <div>
-            <h4>Research</h4>
+            <h4>Konkurrentanalyse</h4>
+            <p>I starten af dette tema lavede vi en konkurrentanalyse, som vi brugte til at undersøge lignende websites og hvilke løsninger der findes inden for den samme branche.</p>
             <p>
-              Man kan lave research ved brug af 4 forskellige metoder - observation, interview, desk research og spørgeskema / survey. I dette tema brugte jeg desk research hvor jeg undersøgte behovet for mit emnesite, og samlede inspiration fra
-              eksisterende hjemmesiders UX og UI elementer. Research giver et solidt vidensgrundlag, som jeg senere i designprocessen kan basere beslutninger på. Desuden kan man ikke lave UX uden først at researche.
+              Vi analyserede sidernes struktur, indhold, visuelle stil og funktionaliteter. Formålet var at identificere styrker, svagheder og best practices, som kunne inspirere vores designbeslutninger og få vores egen løsning til at skille sig ud.
             </p>
           </div>
-          <img src="img/tema-3/research.webp" alt="research" />
-        </div>
-        <div class="user">
           <div>
-            <h4>Målgruppe</h4>
-            <p>
-              Målgruppeanalysen tog udgangspunkt i brugerens behov. Her lærte vi om brugertyper, personaer og user stories, som sørger for at designprocessen er centreret omkring brugeren. Jeg formulerede flere forskellige brugertyper, som jeg satte
-              op i et brugermatrix, som bruges til at skelne brugerne fra hinanden ud fra 4 forskellige parametre (2 gange 2 modsætninger).
-            </p>
+            <img src="img/tema-5_2/konkurrent1.webp" alt="Konkurrentanalyse" />
+            <img src="img/tema-5_2/konkurrent2.webp" alt="Konkurrentanalyse" />
           </div>
-          <img src="img/tema-3/målgruppe.webp" alt="Målgruppe" />
         </div>
       </section>
 
@@ -76,54 +78,52 @@
         <div class="horizontal-sticky">
           <div class="horizontal-track">
             <div class="panel">
-              <div class="idé">
+              <div class="lo-fi">
                 <div>
-                  <h4>Idégenerering</h4>
+                  <h4>Design- og indholdsanalyse</h4>
                   <p>
-                    Efter researchfasen begyndte min idégenerering. I denne del af designprocessen er det vigtig at være åbne for alle de idéer som man får, og få dem skrevet eller tegnet. Det første jeg gjorde var at lave moodboards ud fra min
-                    primære brugertype, mit emne og inspiration til stil.
+                    Vi lavede efterfølgende en design- og indholdsanalyse af vores valgte virksomheds eksisterende site, for at kunne vurdere samspillet mellem visuelle- og tekstelementer. Derudover er det et godt værktøj til at finde frem til hvad
+                    der mangler på sitet og hvad der fungerer godt.
                   </p>
-                  <p>
-                    Moodboards er et godt værktøj til at sparke liv i idégenereringen, da de hjælper med at visualisere stemning og visuelle referencer samt samle inspiration ét sted, hvilket gør det lettere at omsætte abstrakte idéer til konkrete
-                    designvalg.
-                  </p>
+                  <p>Vi fokuserede på hierarki, konsistens og kommunikation. Analysen gav indsigt i, hvordan designvalg og indhold tilsammen påvirker brugeroplevelse.</p>
                 </div>
-                <div class="idé-billeder"><img src="img/tema-3/moodboard1.webp" alt="moodboard" /><img src="img/tema-3/moodboard2.webp" alt="moodboard" /><img src="img/tema-3/moodboard3.webp" alt="moodboard" /></div>
-              </div>
-            </div>
-            <div class="panel">
-              <div class="solution-sketch">
-                <div>
-                  <h4>Solution Sketch & Sketch Museum</h4>
-                  <p>
-                    Jeg brugte solution sketch til at samle de UX/UI elementer, som jeg ville have med på mit emnesite i strukturerede skitser. Her blev funktionalitet, layout og brugerflow tydeliggjort og fungerede som et personligt udgangspunkt for
-                    designprocessen.
-                  </p>
-                  <p>
-                    Efterfølgende deltog jeg i et fælles sketch museum på holdet, hvor alle løsninger blev præsenteret visuelt på én gang. Denne metode gjorde det muligt at sammenligne forskellige tilgange, identificere mønstre og få nye perspektiver
-                    på egne idéer. De indsigter, som jeg fik derfra inddrog jeg senere i designprocessen da jeg gik i gang med lo-fi prototypen.
-                  </p>
-                </div>
-                <img src="img/tema-3/solution-sketch.webp" alt="Solution Sketch" />
+                <img class="tall" src="img/tema-5_2/analyse.webp" alt="design- og indholdsanalyse" />
               </div>
             </div>
             <div class="panel">
               <div class="lo-fi">
                 <div>
-                  <h4>Lo-fi prototype</h4>
+                  <h4>Solution Sketch</h4>
                   <p>
-                    Lo-fi prototypen blev udviklet for hurtigt at teste struktur, indhold og brugerflow uden fokus på visuelle detaljer. Jeg kunne derfor tidligt i processen - med en simpel wireframe - teste idéer og identificerer problemer, som jeg
-                    nemt kunne løse. Typisk laver man både en desktop- og mobilversion af en lo-fi prototype. Det gjorde jeg dog ikke i dette projekt, hvilket jeg har lært gør processen noget mere besværlig senere hen.
+                    Vi brugte solution sketch til at samle de UX/UI elementer, som vi ville have med på mit emnesite i strukturerede skitser. Her blev funktionalitet, layout og brugerflow tydeliggjort og fungerede som et udgangspunkt for
+                    designprocessen.
+                  </p>
+                  <p>
+                    Vi havde svært ved finde på hvad vi ville have på vores tredje side, så derfor sprang vi den over for nu, og begyndte på flere forskellige crazy 8, for at finde frem til hvad der skulle være på siden, og hvilke funktioner der
+                    skulle være.
                   </p>
                 </div>
+                <img src="img/tema-5_2/solution.webp" alt="solution-sketch" />
+              </div>
+            </div>
+            <div class="panel">
+              <div class="styletile">
                 <div>
-                  <h4>Tænke-højt test</h4>
+                  <h4>Crazy 8</h4>
                   <p>
-                    Tænke-højt testen er den test som jeg anvendte til at afprøve min lo-fi prototype. Meningen er at en testperson sætter ord på deres handlinger og tanker, når de skal udføre et bestemt scenarie. I min test var det bl.a. at finde
-                    frem til et bestemt sted på mit site, for at finde ud af om brugeren intuitivt, kan navigere derhen hvor de skal være.
+                    Vi brugte Crazy 8 som en hurtig og effektiv metode til idégenerering under tidspres. Ved at lave otte skitser på otte minutter (1 minut pr. skitse) blev vi tvunget til at tænke hurtigt og intuitivt. Metoden fremmede kreativitet
+                    ved hele tiden at sætte gang i nye idéer. Tidspresset gjorde at vi ikke fokuserede på detaljerne, men på idéerne.
                   </p>
                 </div>
-                <img src="img/tema-3/lo-fi.webp" alt="lo-fi prototype" />
+                <img src="img/tema-5_2/crazy8.webp" alt="crazy 8" />
+                <div>
+                  <h4>Værdiord</h4>
+                  <p>
+                    Vi definerede en masse værdiord for, at tydeliggøre den ønskede stemning og identitet i designet. Ordene fungerede som et referencepunkt for visuelle og indholdsmæssige beslutninger, og var dem vi senere hen lavede style tiles ud
+                    fra. Inden vi kom dertil, lavede jeg dog moodboards ud fra vores værdiord.
+                  </p>
+                </div>
+                <img src="img/tema-5_2/værdiord.webp" alt="værdiord" />
               </div>
             </div>
             <div class="panel">
@@ -131,19 +131,19 @@
                 <div>
                   <h4>Style tiles</h4>
                   <p>
-                    Style tiles blev brugt til at afprøve visuel stil uden at designe færdige sider. Jeg samlede farver, typografi, CTA knapper og UI-elementer for at definere det visuelle udtryk. Style tiles sikrede mig en klar designretning, som
-                    jeg kan teste, inden arbejdet med hi-fi prototypen.
+                    Style tiles blev brugt til at afprøve visuel stil uden at designe færdige sider. Vi samlede farver, typografi, CTA knapper og UI-elementer for at definere det visuelle udtryk. Style tiles sikrede os en klar designretning, som vi
+                    kan teste, inden arbejdet med hi-fi prototypen.
                   </p>
                 </div>
-                <img src="img/tema-3/style-tile.webp" alt="Style tile" />
+                <img src="img/tema-5_2/style-tile.webp" alt="Style tile" />
                 <div>
                   <h4>Likert test</h4>
                   <p>
-                    Likert testen blev brugt til at vurdere, om designet kommunikerede det ønskede udtryk og budskab. Jeg spurgte brugeren ind til, hvor enige de var i at designet kommunikerede et bestemt værdiord. Jeg spurgte ind til alle mine
-                    værdiord til alle mine designs, hvilket gjorde at jeg kunne sammenligne og kombinere mine designs til et endeligt design.
+                    Likert testen blev brugt til at vurdere, om designet kommunikerede det ønskede udtryk og budskab. Vi spurgte brugeren ind til, hvor enige de var i at designet kommunikerede et bestemt værdiord. Vi spurgte ind til alle vores
+                    værdiord til alle vores designs, hvilket gjorde at vi kunne sammenligne og kombinere vores designs til et endeligt design.
                   </p>
                 </div>
-                <img src="img/tema-3/likert-test.webp" alt="likert test" />
+                <img src="img/tema-5_2/likert-test.webp" alt="likert test" />
               </div>
             </div>
           </div>
@@ -151,52 +151,36 @@
       </section>
 
       <section class="section normal">
-        <div class="hifi-wrapper">
-          <div class="hi-fi">
-            <div>
-              <h4>Hi-fi prototype</h4>
-              <p>
-                Hi-fi prototypen laves for at visualisere en realistisk løsning for hvordan den færdige webside skal se ud. Jeg tilføjede det endelige design fra style tiles til min lo-fi prototype sammen med alt indhold og funktionalitet i form af
-                CTA'er og header. Prototypen gjorde det muligt at teste interaktioner og helhedsoplevelse. Den fungerede som grundlag for den efterfølgende kodning.
-              </p>
-            </div>
-            <div>
-              <img src="img/tema-3/hi-fi.webp" alt="hi-fi prototype" />
-              <a
-                class="outline_cta cta2"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.figma.com/proto/MBXQN4ZR8hYIDTljwxUDHd/Hi-fi-prototype?page-id=0%3A1&node-id=38-78&viewport=-298%2C279%2C0.16&t=twbjITtq7RMWDBdS-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6%3A789"
-                >Se prototype</a
-              >
-            </div>
+        <div class="hi-fi">
+          <div>
+            <h4>Hi-fi prototype</h4>
+            <p>
+              Hi-fi prototypen lavede vi for at kunne visualisere en realistisk løsning for hvordan det færdige website ville se ud. Vi tilføjede det endelige design fra style tiles til vores lo-fi prototype sammen med alt indhold og funktionalitet i
+              form af CTA'er og header.
+            </p>
+            <p>Prototypen gjorde det muligt at teste interaktioner og helhedsoplevelse. Den fungerede som grundlag for den efterfølgende kodning.</p>
+            <a
+              class="outline_cta cta2"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.figma.com/proto/jxrYf83Q7tdyPHNsBJo7EV/Design---virksomheds-site?page-id=0%3A1&node-id=16-105&viewport=708%2C-237%2C0.12&t=nc0ORUQQF42uDH1a-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=137%3A813&show-proto-sidebar=1"
+              >Se prototype</a
+            >
           </div>
-          <div class="tænk">
-            <div>
-              <h4>Tænke-højt test</h4>
-              <p>
-                5-second testen blev anvendt til at undersøge førstehåndsindtrykket af designet. Testpersoner blev præsenteret for siden i 5 sekunder og blev spurgt ind til simple ting, som hvad de så og hvad de tror websiden handler om. Metoden gav
-                indsigt i klarhed, hierarki og om det centrale budskab blev forstået hurtigt. Jeg lavede den ud fra mobilversionen af min webside da det er her min brugertype oftes kommer til at bruge min webside.
-              </p>
-            </div>
-            <img src="img/tema-3/tænke-højt.webp" alt="5 second test" />
-          </div>
+          <img src="img/tema-5_2/hi-fi.webp" alt="hi-fi prototype" />
         </div>
       </section>
       <section class="section normal">
         <div class="kode">
           <div>
-            <h3>Kodet site</h3>
+            <h4>Kodet site</h4>
             <p>
-              For at gøre kodeprocessen lidt nemmere for mig selv, lavede jeg et layoutdiagram, som fungerer som bindeleddet mellem hi-fi prototypen og kodning. Jeg satte designet op i et struktureret diagram, som gjorde Den semantiske markup og
-              hierarkiet tydeligt.
+              I dette tema skulle vi kode hele hjemmesiden fra bunden, ligesom i tema 3. Vi startede derfor med at lave et layoutdiagram for alle vores sider. Layoutdiagrammerne fungerede som bindeleddet mellem hi-fi prototypen og kodning. Vi satte
+              designet op i et struktureret diagram, som gjorde den semantiske markup og hierarkiet tydeligt.
             </p>
+            <a class="outline_cta cta3" target="_blank" rel="noopener noreferrer" href="https://mathiasvexoee.github.io/JOJO-redesign/">Se site</a>
           </div>
-          <img src="img/tema-3/layoutdiagram.webp" alt="Layoutdiagram" />
-          <div class="flex">
-            <a class="outline_cta cta3" target="_blank" rel="noopener noreferrer" href="https://mathiasvexoee.github.io/emnesite/">Se site</a>
-            <img src="img/tema-ss/Tema3.webp" alt="Teaser billede til Tema 3" />
-          </div>
+          <img src="img/tema-ss/Tema5.2.webp" alt="Tema 5.2 teaserbillede" />
         </div>
       </section>
       <section class="section normal">
@@ -209,6 +193,15 @@
             </p>
           </div>
           <img src="img/tema-3/lighthouse.webp" alt="lighthousetest" />
+          <div>
+            <h4>Heuristisk test</h4>
+            <p>Ud fra mit endelige kodede site lavede vi den heuristiske test med udgangspunkt i etablerede usability-principper som konsistens, feedback og synlighed.</p>
+            <p>
+              Ved at gennemgå principperne systematisk identificerede vi potentielle brugervenlighedsproblemer, som vi kunne rette, for at gøre vores webside mere brugervenlig. Det var bl.a. at der manglede hover på vores knapper, hvilket gjorde at
+              det ikke var helt tydeligt nok at man kunne klikke på dem.
+            </p>
+          </div>
+          <img src="img/tema-5_2/heuristisk.webp" alt="heuristisk test" />
         </div>
       </section>
     </main>
@@ -258,7 +251,7 @@
             </a>
           </li>
           <li>
-            <a href="www.linkedin.com/in/mathias-vexøe-24a736288" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/mathias-vexøe-24a736288" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 651 651">
                 <defs>
                   <style>

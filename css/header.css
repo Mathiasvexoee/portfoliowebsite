@@ -54,8 +54,68 @@
   margin-bottom: 6px;
   transition: 0.2s linear;
 }
+
 .burger {
   display: none;
+}
+
+/* Portfolio dropdown */
+.portfolio-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 65%;
+  transform: translateX(-50%);
+  background: var(--color-header-bg);
+  border-radius: 25px;
+  padding: 20px 0;
+  min-width: 15vw;
+  z-index: 100;
+  text-align: left;
+}
+
+.portfolio-dropdown::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: transparent;
+  z-index: 1000;
+}
+
+.portfolio-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 25px 30px;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+  position: relative;
+}
+
+.dropdown-menu a:hover {
+  color: var(--color-header-hover);
+}
+
+/* Rød streg under hvert link */
+.dropdown-menu a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  width: 30%;
+  height: 3px;
+  background: var(--color-header-outline);
 }
 
 @media (width < 800px) {
@@ -70,6 +130,7 @@
     flex: 0 0 auto;
     margin: 0;
   }
+
   .burger:hover .line {
     background-color: var(--color-header-hover);
   }
@@ -84,10 +145,12 @@
     width: 150px;
     z-index: 100;
   }
+
   nav.active .nav-links li {
     margin: 40px 20px;
     text-align: left;
   }
+
   nav.active .nav-links li:first-child {
     padding-bottom: 40px;
     border-bottom: 3px solid var(--color-header-outline);
@@ -102,12 +165,42 @@
     transform: rotate(45deg) translate(5px, 9px);
     transition: 0.2s linear;
   }
+
   .burger.active .line:nth-child(2) {
     opacity: 0;
     transition: 0.15s linear;
   }
+
   .burger.active .line:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -9px);
     transition: 0.2s linear;
+  }
+
+  .dropdown-menu {
+    width: 150px;
+    border-radius: 10px;
+  }
+
+  .portfolio-dropdown::after {
+    display: none;
+  }
+
+  nav.active .portfolio-dropdown .dropdown-menu {
+    display: none;
+  }
+
+  nav.active .portfolio-dropdown.open .dropdown-menu {
+    display: block;
+    margin-left: 25.5px;
+    margin-top: -40px;
+  }
+
+  nav.active .dropdown-menu a {
+    padding: 15px 20px;
+    text-align: left;
+  }
+  nav.active .dropdown-menu a:not(:last-child)::after {
+    width: 30%;
+    left: 20px;
   }
 }

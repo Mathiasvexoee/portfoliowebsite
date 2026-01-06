@@ -1,0 +1,278 @@
+main section:nth-of-type(1) {
+  padding: 1em 4em 2em 4em;
+}
+main section:nth-of-type(1) h3 {
+  padding-bottom: 1em;
+}
+main section:nth-of-type(1) img {
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  object-position: top;
+}
+
+main section:nth-of-type(2) {
+  position: relative;
+  z-index: 9;
+  border-radius: 0 0 40px 40px;
+}
+
+main section:nth-of-type(3) {
+  position: relative;
+  z-index: 8;
+  border-radius: 0;
+}
+
+main section:nth-of-type(4) {
+  border-radius: 40px 40px 40px 40px;
+  z-index: 9;
+}
+main section:nth-of-type(5) {
+  z-index: 6;
+}
+main section:nth-of-type(6) {
+  z-index: 5;
+}
+
+.section.normal {
+  padding: 2em;
+}
+.section.normal:not(:first-of-type) h3 {
+  margin: 3em 0 2em 0;
+}
+.section.normal h4 {
+  margin-bottom: 1em;
+}
+p {
+  line-height: 1.25;
+}
+
+/* ANDEN SEKTION */
+.research {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-bottom: 3em;
+}
+
+.research img {
+  max-width: 45%;
+  justify-self: center;
+  align-self: start;
+  margin-bottom: -10vw;
+}
+
+.lo-fi img.tall {
+  max-width: 30%;
+}
+
+/* FEMTE SEKTION */
+.lo-fi {
+  margin: 5em 1em;
+  display: grid;
+}
+
+.lo-fi p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.lo-fi img {
+  grid-row: 2 / 3;
+  justify-self: center;
+  max-width: 100%;
+  margin: 1em 0;
+}
+
+/* SJETTE SEKTION */
+.styletile {
+  margin: 5em 1em;
+  display: grid;
+}
+
+.styletile p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.styletile img {
+  justify-self: center;
+  max-width: 75%;
+  margin: 1em 0;
+}
+
+/* SYVENDE SEKTION */
+.hi-fi {
+  margin-top: 0em;
+  display: grid;
+}
+.hi-fi p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.hi-fi a,
+.kode a {
+  display: block;
+  margin: 2em auto;
+  width: fit-content;
+}
+
+/* OTTENDE SEKTION */
+.kode {
+  margin: 5em 0 1em 0;
+  display: grid;
+}
+.kode p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.kode > img {
+  justify-self: center;
+  max-width: 75%;
+  margin: 1em 0;
+}
+
+/* NIENDE SEKTION */
+.lighthouse {
+  margin: 5em 0 0 0;
+  display: grid;
+}
+.lighthouse p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.lighthouse img {
+  justify-self: center;
+  max-width: 75%;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+@media (width > 800px) {
+  /* ANDEN SEKTION */
+  .research {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .research img {
+    max-width: 75%;
+    margin-bottom: 2em;
+  }
+
+  /* FEMTE SEKTION */
+  .lo-fi {
+    align-items: center;
+  }
+
+  .lo-fi p {
+    max-width: 40vw;
+  }
+  .lo-fi div:nth-of-type(1) {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
+  .lo-fi div:nth-of-type(2) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    margin-top: -7em;
+  }
+
+  .lo-fi img {
+    grid-row: 1 / 2;
+    max-width: 100%;
+  }
+  .lo-fi img.tall {
+    max-width: 100%;
+    margin: 0 2em;
+  }
+
+  /* SJETTE SEKTION */
+  .styletile {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .styletile div {
+    max-width: 40vw;
+  }
+  .styletile :nth-child(3) {
+    align-self: start;
+  }
+  .styletile img {
+    max-width: 50%;
+  }
+
+  /* SYVENDE SEKTION */
+  .hi-fi {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2em;
+    margin-top: 5em;
+  }
+  .hi-fi p {
+    max-width: 40vw;
+  }
+
+  /* OTTENDE SEKTION */
+  .kode {
+    grid-template-columns: 1fr 1fr;
+    margin: 10em 0 1em 0;
+  }
+  .kode p {
+    max-width: 40vw;
+    margin-right: 2em;
+  }
+  .kode > img {
+    max-width: 75%;
+    margin-top: 5em;
+  }
+
+  /* NIENDE SEKTION */
+  .lighthouse {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 5em;
+  }
+  .lighthouse p {
+    max-width: 40vw;
+  }
+  .lighthouse img {
+    margin-top: 3em;
+    margin-bottom: 0;
+  }
+
+  main section:nth-of-type(1) {
+    padding: 1em 8em 2em 8em;
+  }
+  main section:nth-of-type(1) img {
+    aspect-ratio: 3.5 / 1;
+  }
+
+  /* Wrapper bestemmer hvor lang scrollen er */
+  .horizontal-wrapper {
+    height: 400vh; /* 4 panels = 400vh */
+    position: relative;
+  }
+
+  /* Sticky container */
+  .horizontal-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+
+  /* Den horisontale række */
+  .horizontal-track {
+    display: flex;
+    height: 100%;
+    width: 400vw; /* 4 panels */
+    will-change: transform;
+    transition: transform 0.05s ease-out;
+  }
+
+  .panel {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-card-bg);
+  }
+}
