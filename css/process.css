@@ -400,7 +400,6 @@ p {
     position: sticky;
     top: 0;
     height: 100vh;
-    z-index: 5;
   }
 
   /* Den horisontale række */
@@ -409,12 +408,11 @@ p {
     height: 100%;
     width: 400vw; /* 4 panels */
     will-change: transform;
-    transition: transform 0.05s ease-out; /* Gør animationen lidt blødere */
+    transition: transform 0.05s ease-out;
   }
 
   .panel {
     width: 100vw;
-    /* height: 80vh; */
     display: flex;
     justify-content: center;
     align-items: center;
